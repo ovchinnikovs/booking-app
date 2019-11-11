@@ -1,4 +1,5 @@
 {
+  "homepage" : "http://myname.github.io/myapp",
   "name": "booking-app",
   "version": "0.1.0",
   "private": true,
