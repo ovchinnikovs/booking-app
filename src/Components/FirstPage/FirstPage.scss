@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
+
+.box-one,
+.box-two,
+.box-three {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+
+  &__item {
+    position: relative;
+    margin: 0 2px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__name {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+}

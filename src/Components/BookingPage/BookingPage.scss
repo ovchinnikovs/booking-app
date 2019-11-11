@@ -1,0 +1,55 @@
+.hotels {
+  &__item {
+    margin-bottom: 10px;
+    height: 230px;
+  }
+}
+
+.hotel {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0 20px;
+
+  &__info {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  &__name {
+    font-size: 24px;
+    margin: 10px 0 10px;
+  }
+
+  &__stars {
+    margin: 0 10px 5px 0;
+  }
+
+  &__text-date {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  &__photo {
+    margin: 10px 0;
+    width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.weather {
+  display: flex;
+
+  &__day {
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  &__date {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+}
