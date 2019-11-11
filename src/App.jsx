@@ -8,13 +8,13 @@ import BookingPage from './Components/BookingPage/BookingPage';
 
 function App() {
   return (
-    <main className="App">
+    <div className="App">
       <Header />
       <Switch>
         <Route exact path="/" component={FirstPage} />
         <Route path="/results/:searchQuery/:startDate/:endDate" component={BookingPage} />
       </Switch>
-    </main>
+    </div>
   );
 }
 

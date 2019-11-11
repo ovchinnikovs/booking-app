@@ -29,13 +29,13 @@ export default function Header() {
   };
 
   return (
-    <section className="header container">
+    <header className="header container">
         <form className="search-form" onSubmit={(e) => addValueToParams(e)}>
           <input
             className="search-form__search"
             value={inputValue}
             type="text"
-            placeholder="Куда намылился?"
+            placeholder="Where are you going?"
             onChange={(e) => handleChangeValue(e)}
           />
           <DatePicker
@@ -63,6 +63,6 @@ export default function Header() {
             <FontAwesomeIcon className="icon-comment" icon={faSearch} size="lg" />
           </button>
         </form>
-    </section>
+    </header>
   )
 };
