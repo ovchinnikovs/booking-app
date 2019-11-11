@@ -6,7 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { getStartDateFormat, getEndDateFormat } from '../../Services/moment';
+import { getStartDateFormat, getEndDateFormat } from '../../Utils/moment';
 
 export default function Header() {
   const history = useHistory();
@@ -21,7 +21,7 @@ export default function Header() {
 
   const addValueToParams = (e) => {
     e.preventDefault();
-    if (inputValue.trim()) {
+    if (inputValue.trim() && startDate && endDate) {
       history.push(
         `/results/${inputValue}/${getStartDateFormat(startDate)}/${getEndDateFormat(endDate)}`
         );

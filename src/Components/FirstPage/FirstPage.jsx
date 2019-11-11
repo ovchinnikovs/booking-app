@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./FirstPage.scss";
 
-import { toDaysDate, tomorrowsDate } from '../../Services/moment';
+import { toDaysDate, tomorrowsDate } from '../../Utils/moment';
 
 export default function FirstPage() {
   return (

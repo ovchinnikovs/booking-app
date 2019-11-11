@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import propTypes from 'prop-types';
 import "./BookingPage.scss";
 
-import { getDateFromDT } from '../../Services/moment';
+import { getDateFromDT } from '../../Utils/moment';
 
 import apiService from '../../Services/APIService';
 import Icon from '../Icon/Icon';
